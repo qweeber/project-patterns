@@ -17,7 +17,7 @@ public class Warrior {
         this.hitStrategy = hitStrategy;
     }
 
-    public void hit(){
-        hitStrategy.hit();
+    public String hit(){
+        return hitStrategy.hit();
     }
 }
