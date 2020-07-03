@@ -23,7 +23,10 @@ public class Coin {
         coin += ADD_MORE_COIN;
     }
 
-    public void deductCoin(){
+    public void deductCoin() throws Exception {
+        if(coin <= 0){
+            throw new Exception("Error: Coin equals 0. ");
+        }
         coin--;
     }
 }

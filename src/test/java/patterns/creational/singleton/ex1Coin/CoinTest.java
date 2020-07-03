@@ -39,7 +39,11 @@ class CoinTest {
 
     @Test
     void deductCoinTest() {
-        coin.deductCoin();
+        try {
+            coin.deductCoin();
+        }catch (Exception e){
+            e.getMessage();
+        }
         assertThat(coin.getCoin()).isEqualTo(9);
     }
 }
