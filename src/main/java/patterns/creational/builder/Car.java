@@ -4,10 +4,10 @@ public class Car {
     private String model;
     private String brand;
     private int maxSpeed;
-    private int ccm;
+    private float ccm;
     private String color;
 
-    public Car(String model, String brand, int maxSpeed, int ccm, String color) {
+    public Car(String model, String brand, int maxSpeed, float ccm, String color) {
         this.model = model;
         this.brand = brand;
         this.maxSpeed = maxSpeed;
@@ -27,7 +27,7 @@ public class Car {
         return maxSpeed;
     }
 
-    public int getCcm() {
+    public float getCcm() {
         return ccm;
     }
 
@@ -50,7 +50,7 @@ public class Car {
         private String model;
         private String brand;
         private int maxSpeed;
-        private int ccm;
+        private float ccm;
         private String color;
 
         public Builder withModel(String model){
@@ -68,7 +68,7 @@ public class Car {
             return this;
         }
 
-        public Builder withCcm(int ccm){
+        public Builder withCcm(float ccm){
             this.ccm = ccm;
             return this;
         }
